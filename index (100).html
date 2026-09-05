@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Food Line Production — виробництво соусів під ваш бренд</title>
+<meta name="description" content="Виробник соусів у Києві: private label для мереж, фудсервіс і HoReCa, контрактне виробництво. 93 позиції, власні R&amp;D і логістика, FSSC 22000.">
+<meta name="theme-color" content="#15200E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Food Line Production — виробництво соусів під ваш бренд">
+<meta property="og:description" content="Private label, фудсервіс, контрактне виробництво. 93 позиції в серії, власні R&amp;D і логістика, FSSC 22000.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='14 20 333 326'><path fill='%2363864A' d='M217.8%2C276.6c0%2C0%2C64.3-22.4%2C81.8-89.1c0%2C0-21.6%2C50.1-68.6%2C74.3c7-10.2%2C15.3-26.4%2C21.1-50.6 c15.3-64.1%2C68.2-92.3%2C68.2-92.3C371.1%2C262.1%2C217.8%2C276.6%2C217.8%2C276.6z'/><path fill='%2397C35A' d='M213.6%2C278.2c0%2C0%2C11.5-65.4-39.8-112.9c0%2C0%2C34.4%2C42.8%2C33%2C94.5c-5.7-10.9-16.1-25.9-35-42.7 c-50-44.3-49.4-103-49.4-103C275.9%2C141.3%2C213.6%2C278.2%2C213.6%2C278.2z'/><path fill='%23DD9C46' d='M241%2C188.8c0%2C0%2C11.5-65.4-39.8-112.9c0%2C0%2C34.4%2C42.8%2C33%2C94.5c-5.7-10.9-16.1-25.9-35-42.7 c-50-44.3-49.4-103-49.4-103C303.2%2C51.8%2C241%2C188.8%2C241%2C188.8z'/><path fill='%2363864A' d='M70.1%2C283.2c52.6%2C48.9%2C134.9%2C55.9%2C195.3%2C16.4c36.4-23.8%2C58.9-58.9%2C66.8-96.5 c-3.6%2C43.4-26.3%2C85.4-67%2C113c-60%2C40.7-143%2C35-196.4-13.7C26.6%2C264.1%2C11.5%2C210%2C21.9%2C160.4C18.2%2C204.2%2C33.9%2C249.6%2C70.1%2C283.2z'/><path fill='%2397C35A' d='M59.7%2C125.1c-21.7%2C64.7%2C8.9%2C136.6%2C71.1%2C167.7c33%2C16.5%2C69.1%2C19.5%2C101.9%2C11.4 c-37.2%2C13.9-80.3%2C13-119.1-6.6c-61.4-31.1-91.8-102.1-70.9-166.2c16-49.1%2C56.1-82.8%2C102.6-94.3C106.4%2C51.7%2C74%2C82.5%2C59.7%2C125.1z'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+<script type="importmap">
+{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.185.1/build/three.module.min.js"}}
+</script>
+<style>
+/* ============================================================
+   FOOD LINE PRODUCTION — одностраничний сайт
+   Дизайн-система
+   ============================================================ */
+:root{
+  --ink:#0D1208;
+  --dark:#15200E;
+  --dark-2:#1E2A17;
+  --dark-3:#2A3A1F;
+  --green-d:#63864A;
+  --green-l:#97C35A;
+  --orange:#DD9C46;
+  --orange-lt:#EDB86A;
+  --cream:#F3F0E7;
+  --paper:#FBFBF8;
+  --mute-d:rgba(243,240,231,.58);
+  --mute-l:#6C6C6E;
+  --line-d:rgba(243,240,231,.14);
+  --line-l:#DFE2D8;
+  --panel:#F0F3EA;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --gut:clamp(20px,5vw,72px);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:auto}
+body{
+  font-family:'Manrope',system-ui,-apple-system,sans-serif;
+  background:var(--dark);color:var(--cream);
+  font-size:16px;line-height:1.55;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+body.lock{overflow:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--orange);color:var(--ink)}
+
+/* ---------- службові ---------- */
+.wrap{width:100%;max-width:1400px;margin:0 auto;padding:0 var(--gut)}
+.sec{position:relative;padding:clamp(90px,13vh,170px) 0}
+.light{background:var(--paper);color:#1A1A1A}
+.light .mute{color:var(--mute-l)}
+.dark{background:var(--dark)}
+.darker{background:var(--ink)}
+.mute{color:var(--mute-d)}
+
+h1,h2,h3,.dsp{font-family:'Unbounded',sans-serif;font-weight:600;letter-spacing:-.02em;line-height:1.08}
+h1{font-size:clamp(38px,7.2vw,104px)}
+h2{font-size:clamp(28px,4.4vw,62px)}
+h3{font-size:clamp(17px,1.6vw,23px);letter-spacing:-.01em}
+p{font-size:clamp(15px,1.15vw,18px)}
+
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--orange);margin-bottom:26px}
+.eyebrow::before{content:'';width:34px;height:1px;background:var(--orange);flex:none}
+.lead{font-size:clamp(16px,1.45vw,21px);line-height:1.55;max-width:60ch;color:var(--mute-d)}
+.light .lead{color:var(--mute-l)}
+
+/* ---------- зерно + курсорне світло ---------- */
+.grain{position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.32;
+  mix-blend-mode:overlay;background-repeat:repeat;background-size:180px}
+.glow{position:fixed;z-index:0;pointer-events:none;width:760px;height:760px;
+  left:0;top:0;margin:-380px 0 0 -380px;opacity:0;transition:opacity .8s ease;
+  background:radial-gradient(circle,rgba(151,195,90,.13) 0%,rgba(221,156,70,.06) 38%,transparent 68%);
+  will-change:transform}
+body.glowon .glow{opacity:1}
+
+/* ---------- прелоадер ---------- */
+#pre{position:fixed;inset:0;z-index:10000;background:var(--ink);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;
+  transition:opacity .8s var(--ease),visibility .8s}
+#pre.gone{opacity:0;visibility:hidden}
+#pre svg{width:74px;height:74px;animation:breathe 2.6s var(--ease) infinite}
+@keyframes breathe{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.09);opacity:1}}
+#pre .track{width:min(220px,44vw);height:2px;background:rgba(243,240,231,.13);overflow:hidden}
+#pre .track i{display:block;height:100%;width:0;background:var(--orange);transition:width .35s ease}
+
+/* ---------- шапка ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:900;
+  padding:18px var(--gut);display:flex;align-items:center;justify-content:space-between;
+  transition:background .45s var(--ease),padding .45s var(--ease),backdrop-filter .45s}
+header.stuck{background:rgba(21,32,14,.82);backdrop-filter:blur(14px);padding:12px var(--gut);
+  border-bottom:1px solid var(--line-d)}
+header img{height:32px;transition:height .45s var(--ease)}
+header.stuck img{height:26px}
+nav{display:flex;gap:30px;align-items:center}
+nav a{font-size:13.5px;font-weight:600;color:var(--mute-d);transition:color .25s;position:relative}
+nav a::after{content:'';position:absolute;left:0;right:0;bottom:-6px;height:1px;
+  background:var(--orange);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+nav a:hover{color:var(--cream)}
+nav a:hover::after{transform:scaleX(1)}
+@media(max-width:900px){nav .hidem{display:none}}
+#bar{position:fixed;top:0;left:0;height:2px;background:var(--orange);z-index:950;width:0}
+
+/* ---------- кнопки ---------- */
+.btn{position:relative;display:inline-flex;align-items:center;gap:12px;
+  padding:19px 38px;font-weight:700;font-size:15px;border:none;cursor:pointer;
+  background:var(--orange);color:var(--ink);overflow:hidden;will-change:transform;
+  font-family:inherit;isolation:isolate}
+.btn span{position:relative;z-index:2;display:block;will-change:transform}
+.btn::before{content:'';position:absolute;inset:0;z-index:1;background:var(--green-l);
+  transform:translateY(101%);transition:transform .5s var(--ease)}
+.btn:hover::before{transform:translateY(0)}
+.btn.ghost{background:transparent;color:var(--cream);border:1px solid var(--line-d)}
+.btn.ghost::before{background:var(--cream)}
+.btn.ghost:hover{color:var(--ink)}
+.light .btn.ghost{color:#1A1A1A;border-color:var(--line-l)}
+.light .btn.ghost::before{background:var(--dark)}
+.light .btn.ghost:hover{color:var(--cream)}
+.btn.big{padding:26px 54px;font-size:17px}
+
+/* ---------- герой ---------- */
+#hero{position:relative;min-height:100svh;display:flex;align-items:center;
+  overflow:hidden;padding:120px 0 90px}
+#hero .bg{position:absolute;inset:-12%;z-index:0;
+  background:radial-gradient(60% 55% at 68% 38%,rgba(99,134,74,.34) 0%,transparent 62%),
+             radial-gradient(48% 46% at 22% 78%,rgba(221,156,70,.15) 0%,transparent 66%);
+  will-change:transform}
+#hero .mark{position:absolute;right:-14vw;top:50%;width:min(78vw,860px);z-index:1;
+  opacity:.5;will-change:transform;translate:0 -50%}
+#hero .inner{position:relative;z-index:3;width:100%}
+#hero h1{max-width:14ch}
+.word{display:inline-block;overflow:hidden;vertical-align:bottom;padding-bottom:.06em}
+.word i{display:inline-block;font-style:normal;transform:translateY(105%);
+  transition:transform 1s var(--ease)}
+.ready .word i{transform:translateY(0)}
+#hero .sub{margin-top:32px;max-width:46ch;font-size:clamp(16px,1.5vw,21px);color:var(--mute-d);
+  opacity:0;transform:translateY(24px);transition:all 1s var(--ease) .5s}
+.ready #hero .sub{opacity:1;transform:none}
+#hero .acts{margin-top:46px;display:flex;gap:16px;flex-wrap:wrap;
+  opacity:0;transform:translateY(24px);transition:all 1s var(--ease) .68s}
+.ready #hero .acts{opacity:1;transform:none}
+.hint{position:absolute;left:var(--gut);bottom:34px;z-index:4;display:flex;align-items:center;gap:12px;
+  font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute-d);
+  opacity:0;transition:opacity 1s ease 1.2s}
+.ready .hint{opacity:1}
+.hint .rail{width:56px;height:1px;background:var(--line-d);position:relative;overflow:hidden}
+.hint .rail::after{content:'';position:absolute;inset:0;background:var(--orange);
+  animation:sweep 2.2s var(--ease) infinite}
+@keyframes sweep{0%{transform:translateX(-100%)}60%,100%{transform:translateX(100%)}}
+
+/* ---------- біжучий рядок ---------- */
+.ticker{border-top:1px solid var(--line-d);border-bottom:1px solid var(--line-d);
+  padding:22px 0;overflow:hidden;white-space:nowrap;background:var(--dark)}
+.ticker .row{display:inline-flex;gap:48px;align-items:center;will-change:transform}
+.ticker b{font-family:'Unbounded';font-weight:600;font-size:clamp(17px,2vw,27px);
+  letter-spacing:-.01em;color:var(--cream);opacity:.92}
+.ticker s{text-decoration:none;color:var(--orange);font-size:15px}
+
+/* ---------- цифри ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line-l);
+  border-top:1px solid var(--line-l);border-bottom:1px solid var(--line-l)}
+.stat{background:var(--paper);padding:46px 30px 42px}
+.stat b{display:block;font-family:'Unbounded';font-weight:600;
+  font-size:clamp(34px,5vw,72px);line-height:1;color:var(--dark);letter-spacing:-.03em}
+.stat span{display:block;margin-top:16px;font-size:14px;line-height:1.5;color:var(--mute-l);max-width:24ch}
+@media(max-width:860px){.stats{grid-template-columns:1fr 1fr}}
+
+/* ---------- 3D-секція ---------- */
+#explode{position:relative;background:var(--ink)}
+#explode .pin{position:sticky;top:0;height:100svh;overflow:hidden}
+#explode canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+#explode .vig{position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(58% 58% at 50% 46%,transparent 42%,rgba(13,18,8,.82) 100%)}
+.stage-txt{position:absolute;left:var(--gut);top:50%;translate:0 -50%;z-index:5;
+  max-width:min(420px,40vw);pointer-events:none}
+.stage-txt .step{position:absolute;top:0;left:0;opacity:0;transform:translateY(28px);
+  transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.stage-txt .step.on{opacity:1;transform:none;position:relative}
+.stage-txt h3{margin-bottom:14px}
+.stage-txt p{font-size:15px;color:var(--mute-d)}
+.hot{position:absolute;left:0;top:0;z-index:6;pointer-events:none;opacity:0;
+  transition:opacity .45s ease;will-change:transform}
+.hot .dot{width:7px;height:7px;background:var(--orange);border-radius:50%;
+  box-shadow:0 0 0 5px rgba(221,156,70,.2)}
+.hot .cap{position:absolute;left:16px;top:-9px;white-space:nowrap;font-size:12px;font-weight:600;
+  letter-spacing:.05em;background:rgba(13,18,8,.72);backdrop-filter:blur(6px);
+  padding:5px 11px;border:1px solid var(--line-d);color:var(--cream)}
+.no3d{position:absolute;inset:0;display:none;place-items:center;padding:var(--gut)}
+.no3d.on{display:grid}
+#explode .prog{position:absolute;right:var(--gut);top:50%;translate:0 -50%;z-index:5;
+  width:2px;height:190px;background:var(--line-d)}
+#explode .prog i{display:block;width:100%;height:0;background:var(--orange)}
+@media(max-width:760px){
+  .stage-txt{left:var(--gut);right:var(--gut);top:auto;bottom:8vh;translate:0;max-width:none}
+  #explode .prog{display:none}
+}
+
+/* ---------- рядки-формати ---------- */
+.rows{border-top:1px solid var(--line-l)}
+.light .row{border-bottom:1px solid var(--line-l)}
+.row{position:relative;display:grid;grid-template-columns:64px minmax(200px,1fr) 2fr;
+  gap:clamp(16px,3vw,54px);padding:34px 0;align-items:start;
+  transition:padding-left .5s var(--ease)}
+.row:hover{padding-left:16px}
+.row .no{font-family:'Unbounded';font-size:13px;color:var(--orange);padding-top:4px}
+.row h3{transition:color .35s}
+.row:hover h3{color:var(--green-d)}
+.row p{font-size:15.5px;color:var(--mute-l)}
+@media(max-width:820px){.row{grid-template-columns:44px 1fr;}.row p{grid-column:2}}
+
+/* ---------- бренди / світло на матеріалі ---------- */
+.brands{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
+@media(max-width:1000px){.brands{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.brands{grid-template-columns:1fr}}
+.card{position:relative;overflow:hidden;background:var(--panel);
+  padding:34px 32px 38px;border:1px solid var(--line-l);isolation:isolate;
+  transition:transform .6s var(--ease),border-color .4s}
+.card:hover{transform:translateY(-5px);border-color:var(--green-d)}
+.card .sheen{position:absolute;inset:0;z-index:0;opacity:0;transition:opacity .45s ease;
+  background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),
+    rgba(255,255,255,.92) 0%,rgba(151,195,90,.20) 34%,transparent 70%)}
+.card:hover .sheen{opacity:1}
+.card > *:not(.sheen){position:relative;z-index:1}
+.card .cnt{font-size:12.5px;font-weight:700;color:var(--green-d);margin:8px 0 14px;
+  letter-spacing:.06em}
+.card p{font-size:14.5px;color:var(--mute-l)}
+
+/* матеріали — відблиск під курсором */
+.mats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+@media(max-width:820px){.mats{grid-template-columns:1fr 1fr}}
+.mat{position:relative;aspect-ratio:4/3;overflow:hidden;border:1px solid var(--line-l);
+  display:flex;align-items:flex-end;padding:18px}
+.mat .surf{position:absolute;inset:0;z-index:0;transition:filter .3s}
+.mat .spec{position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:screen;
+  background:radial-gradient(var(--r,180px) circle at var(--mx,50%) var(--my,40%),
+    rgba(255,255,255,var(--i,.55)) 0%,rgba(255,255,255,0) 62%)}
+.mat b{position:relative;z-index:2;font-size:13px;font-weight:700;letter-spacing:.03em;
+  color:#fff;text-shadow:0 1px 10px rgba(0,0,0,.55)}
+.mat.glass .surf{background:linear-gradient(145deg,#8FA9B4,#4E6570 45%,#7E97A2)}
+.mat.metal .surf{background:linear-gradient(160deg,#9A9E97,#5E6560 40%,#8D928A)}
+.mat.gloss .surf{background:linear-gradient(150deg,#2E4022,#63864A 55%,#3A4E2A)}
+.mat.kraft .surf{background:linear-gradient(140deg,#B79A6E,#8A6E45 50%,#A98C60)}
+.mat.glass{--r:200px;--i:.72}
+.mat.metal{--r:260px;--i:.42}
+.mat.gloss{--r:130px;--i:.85}
+.mat.kraft{--r:300px;--i:.16}
+
+/* ---------- смаки ---------- */
+.taste{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-d);
+  margin-top:56px;border:1px solid var(--line-d)}
+@media(max-width:1000px){.taste{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.taste{grid-template-columns:1fr}}
+.tc{background:var(--dark);padding:28px 24px 30px;transition:background .45s var(--ease)}
+.tc:hover{background:var(--dark-2)}
+.tc b{display:block;font-size:15px;color:var(--green-l);margin-bottom:9px}
+.tc span{font-size:13.5px;line-height:1.5;color:var(--mute-d)}
+
+/* ---------- SVG-малювання ---------- */
+[data-draw]{stroke-linecap:round;stroke-linejoin:round;fill:none}
+.packs{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;margin-top:56px;align-items:end}
+@media(max-width:900px){.packs{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.packs{grid-template-columns:1fr 1fr}}
+.pk svg{width:100%;height:auto;max-height:230px;display:block;margin-bottom:20px}
+.pk b{display:block;font-size:15px;font-weight:700;margin-bottom:6px}
+.pk span{font-size:13px;color:var(--mute-l);line-height:1.45}
+
+/* кроки R&D */
+.flowwrap{position:relative;margin-top:60px}
+.flowwrap svg{width:100%;height:auto;display:block}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:-6px}
+@media(max-width:980px){.steps{grid-template-columns:repeat(3,1fr);gap:26px}}
+@media(max-width:560px){.steps{grid-template-columns:1fr 1fr}}
+.st{opacity:.3;transition:opacity .5s var(--ease),transform .5s var(--ease);transform:translateY(10px)}
+.st.on{opacity:1;transform:none}
+.st em{font-style:normal;font-family:'Unbounded';font-size:12px;color:var(--orange);
+  display:block;margin-bottom:9px}
+.st b{display:block;font-size:15.5px;margin-bottom:7px}
+.st span{font-size:13px;line-height:1.5;color:var(--mute-d)}
+
+/* маршрут логістики */
+.route{margin-top:50px}
+.route svg{width:100%;height:auto;display:block;overflow:visible}
+.route .pin-lbl{font-family:'Manrope';font-size:13px;font-weight:600;fill:var(--cream)}
+.route .pin-sub{font-family:'Manrope';font-size:11px;fill:rgba(243,240,231,.55)}
+
+/* ---------- якість ---------- */
+.qual{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,90px);align-items:center}
+@media(max-width:900px){.qual{grid-template-columns:1fr}}
+.qlist{border-top:1px solid var(--line-l)}
+.qi{padding:22px 0;border-bottom:1px solid var(--line-l);display:grid;
+  grid-template-columns:160px 1fr;gap:22px}
+.qi b{font-size:15px}
+.qi span{font-size:14.5px;color:var(--mute-l)}
+@media(max-width:620px){.qi{grid-template-columns:1fr;gap:8px}}
+
+/* ---------- фінал ---------- */
+#cta{position:relative;overflow:hidden;text-align:center;
+  padding:clamp(110px,17vh,210px) 0}
+#cta .bg{position:absolute;inset:-20%;z-index:0;will-change:transform;
+  background:radial-gradient(52% 52% at 50% 45%,rgba(99,134,74,.34),transparent 68%)}
+#cta .inner{position:relative;z-index:2}
+#cta h2{max-width:17ch;margin:0 auto}
+#cta .lead{margin:26px auto 0;text-align:center}
+#cta .acts{margin-top:48px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.contacts{margin-top:70px;display:flex;gap:clamp(24px,5vw,70px);justify-content:center;
+  flex-wrap:wrap;font-size:14.5px;color:var(--mute-d)}
+.contacts b{display:block;color:var(--cream);font-weight:700;margin-bottom:5px;font-size:13px;
+  letter-spacing:.05em}
+.contacts a:hover{color:var(--orange)}
+
+footer{border-top:1px solid var(--line-d);padding:34px var(--gut);
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  font-size:13px;color:var(--mute-d);background:var(--ink)}
+
+/* ---------- поява ---------- */
+.rv{opacity:0;transform:translateY(34px);
+  transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv[data-d="1"]{transition-delay:.09s}
+.rv[data-d="2"]{transition-delay:.18s}
+.rv[data-d="3"]{transition-delay:.27s}
+.rv[data-d="4"]{transition-delay:.36s}
+.rv[data-d="5"]{transition-delay:.45s}
+
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+  .word i{transform:none}
+  .grain,.glow{display:none}
+}
+
+
+/* ---------- зібрані додатки ---------- */
+#explode{height:440vh}
+@media(max-width:760px){#explode{height:360vh}}
+@media(max-width:980px){.flowwrap svg{display:none}.steps{margin-top:20px}}
+.ticker .row{animation:marq 46s linear infinite}
+.ticker:hover .row{animation-play-state:paused}
+@keyframes marq{to{transform:translateX(-33.3333%)}}
+.grain{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-stopped{overflow:hidden}
+@media(prefers-reduced-motion:reduce){.ticker .row{animation:none}}
+
+</style>
+</head>
+<body>
+
+<!-- ================= ПРЕЛОАДЕР ================= -->
+<div id="pre">
+  <svg viewBox="14 20 333 326" aria-hidden="true"><path fill="#63864A" d="M217.8,276.6c0,0,64.3-22.4,81.8-89.1c0,0-21.6,50.1-68.6,74.3c7-10.2,15.3-26.4,21.1-50.6 c15.3-64.1,68.2-92.3,68.2-92.3C371.1,262.1,217.8,276.6,217.8,276.6z"/><path fill="#97C35A" d="M213.6,278.2c0,0,11.5-65.4-39.8-112.9c0,0,34.4,42.8,33,94.5c-5.7-10.9-16.1-25.9-35-42.7 c-50-44.3-49.4-103-49.4-103C275.9,141.3,213.6,278.2,213.6,278.2z"/><path fill="#DD9C46" d="M241,188.8c0,0,11.5-65.4-39.8-112.9c0,0,34.4,42.8,33,94.5c-5.7-10.9-16.1-25.9-35-42.7 c-50-44.3-49.4-103-49.4-103C303.2,51.8,241,188.8,241,188.8z"/><path fill="#63864A" d="M70.1,283.2c52.6,48.9,134.9,55.9,195.3,16.4c36.4-23.8,58.9-58.9,66.8-96.5 c-3.6,43.4-26.3,85.4-67,113c-60,40.7-143,35-196.4-13.7C26.6,264.1,11.5,210,21.9,160.4C18.2,204.2,33.9,249.6,70.1,283.2z"/><path fill="#97C35A" d="M59.7,125.1c-21.7,64.7,8.9,136.6,71.1,167.7c33,16.5,69.1,19.5,101.9,11.4 c-37.2,13.9-80.3,13-119.1-6.6c-61.4-31.1-91.8-102.1-70.9-166.2c16-49.1,56.1-82.8,102.6-94.3C106.4,51.7,74,82.5,59.7,125.1z"/></svg>
+  <div class="track"><i id="preBar"></i></div>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="glow" aria-hidden="true"></div>
+<div id="bar"></div>
+
+<!-- ================= ШАПКА ================= -->
+<header id="hdr">
+  <a href="#hero" aria-label="Food Line Production"><img src="data:image/png;base64,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" alt="Food Line Production"></a>
+  <nav>
+    <a href="#explode" class="hidem">Що всередині</a>
+    <a href="#formats" class="hidem">Співпраця</a>
+    <a href="#packaging" class="hidem">Пакування</a>
+    <a href="#process" class="hidem">Розробка</a>
+    <a href="#cta">Бриф</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ================= ГЕРОЙ ================= -->
+<section id="hero">
+  <div class="bg" data-para data-speed="0.14" aria-hidden="true"></div>
+  <svg class="mark" viewBox="14 20 333 326" data-para data-speed="0.3" aria-hidden="true"><path fill="#63864A" d="M217.8,276.6c0,0,64.3-22.4,81.8-89.1c0,0-21.6,50.1-68.6,74.3c7-10.2,15.3-26.4,21.1-50.6 c15.3-64.1,68.2-92.3,68.2-92.3C371.1,262.1,217.8,276.6,217.8,276.6z"/><path fill="#97C35A" d="M213.6,278.2c0,0,11.5-65.4-39.8-112.9c0,0,34.4,42.8,33,94.5c-5.7-10.9-16.1-25.9-35-42.7 c-50-44.3-49.4-103-49.4-103C275.9,141.3,213.6,278.2,213.6,278.2z"/><path fill="#DD9C46" d="M241,188.8c0,0,11.5-65.4-39.8-112.9c0,0,34.4,42.8,33,94.5c-5.7-10.9-16.1-25.9-35-42.7 c-50-44.3-49.4-103-49.4-103C303.2,51.8,241,188.8,241,188.8z"/><path fill="#63864A" d="M70.1,283.2c52.6,48.9,134.9,55.9,195.3,16.4c36.4-23.8,58.9-58.9,66.8-96.5 c-3.6,43.4-26.3,85.4-67,113c-60,40.7-143,35-196.4-13.7C26.6,264.1,11.5,210,21.9,160.4C18.2,204.2,33.9,249.6,70.1,283.2z"/><path fill="#97C35A" d="M59.7,125.1c-21.7,64.7,8.9,136.6,71.1,167.7c33,16.5,69.1,19.5,101.9,11.4 c-37.2,13.9-80.3,13-119.1-6.6c-61.4-31.1-91.8-102.1-70.9-166.2c16-49.1,56.1-82.8,102.6-94.3C106.4,51.7,74,82.5,59.7,125.1z"/></svg>
+  <div class="wrap inner">
+    <h1 data-split>Виробництво соусів під ваш бренд</h1>
+    <p class="sub">Власні торгові марки, private label для роздрібних мереж і рецептури під замовлення для фудсервісу, HoReCa та B2B. Київ, Україна.</p>
+    <div class="acts">
+      <a class="btn" data-mag href="https://yuriybuz.github.io/brief/" target="_blank" rel="noopener"><span>Заповнити бриф</span></a>
+      <a class="btn ghost" data-mag href="#explode"><span>Що всередині пляшки</span></a>
+    </div>
+  </div>
+  <div class="hint"><span class="rail"></span> Прокрутіть</div>
+</section>
+
+<!-- ================= БІЖУЧИЙ РЯДОК ================= -->
+<div class="ticker" aria-hidden="true">
+  <div class="row" id="tick">
+    <b>Bonsai</b><s>◆</s><b>Peri Peri</b><s>◆</s><b>Salateria</b><s>◆</s><b>YKI</b><s>◆</s>
+    <b>Bonsai Premium</b><s>◆</s><b>Bonsai Professional</b><s>◆</s>
+  </div>
+</div>
+
+<!-- ================= ЦИФРИ ================= -->
+<section class="sec light" id="about" style="padding-bottom:0">
+  <div class="wrap">
+    <div class="eyebrow rv">Хто ми</div>
+    <h2 class="rv" data-d="1" style="max-width:18ch">Український виробник соусів повного циклу</h2>
+    <p class="lead rv" data-d="2" style="margin-top:28px">Ми розробляємо, варимо й фасуємо соуси на власній потужності в Києві. Свої марки продаємо через національні мережі — і цю саму лінію відкриваємо для партнерів: під вашу марку, ваше меню або вашу рецептуру.</p>
+  </div>
+  <div class="stats rv" data-d="3" style="margin-top:clamp(50px,7vw,90px)">
+    <div class="stat"><b data-count="93">0</b><span>позицій соусів у серійному виробництві</span></div>
+    <div class="stat"><b data-count="6">0</b><span>власних торгових марок у мережах</span></div>
+    <div class="stat"><b data-count="10">0</b><span>кухонь світу в асортименті</span></div>
+    <div class="stat"><b>40 мл — 20 л</b><span>діапазон фасування: від стаканчика до каністри</span></div>
+  </div>
+</section>
+
+<!-- ================= 3D: РОЗБІРКА ПЛЯШКИ ================= -->
+<section id="explode">
+  <div class="pin">
+    <canvas id="gl"></canvas>
+    <div class="vig" aria-hidden="true"></div>
+
+    <div class="no3d" id="no3d">
+      <div style="max-width:520px">
+        <div class="eyebrow">Що всередині</div>
+        <h2 style="font-size:clamp(26px,4vw,44px)">Соєвий соус — чотири складники й нічого зайвого</h2>
+        <p class="lead" style="margin-top:22px">Соєві боби, пшениця, сіль і вода. Ферментація, фільтрація, пастеризація, розлив — усе на одній лінії в Києві.</p>
+      </div>
+    </div>
+
+    <div class="stage-txt" id="stage">
+      <div class="step" data-step="0">
+        <h3>Пляшка, яку бачить покупець</h3>
+        <p>Форма, етикетка, кришка й те, що всередині — усе це ми робимо на одній лінії. Прокрутіть, щоб розібрати її на складники.</p>
+      </div>
+      <div class="step" data-step="1">
+        <h3>Кришка</h3>
+        <p>Контроль першого відкриття, дозатор або широке горло — залежно від того, стоїть продукт на полиці чи працює на кухні закладу.</p>
+      </div>
+      <div class="step" data-step="2">
+        <h3>Етикетка під вашу марку</h3>
+        <p>Друкуємо й наносимо етикетку з вашим дизайном, штрихкодуванням, датою та номером партії. Українське, експортне або багатомовне маркування.</p>
+      </div>
+      <div class="step" data-step="3">
+        <h3>Склад під контролем</h3>
+        <p>Класичний соєвий соус — це соєві боби, пшениця, сіль і вода. Кожен складник проходить вхідний контроль, кожна партія — лабораторію: сухі речовини, pH, кислотність, в’язкість.</p>
+      </div>
+    </div>
+
+    <div class="prog" aria-hidden="true"><i id="glProg"></i></div>
+  </div>
+</section>
+
+<!-- ================= ФОРМАТИ ================= -->
+<section class="sec light" id="formats">
+  <div class="wrap">
+    <div class="eyebrow rv">Співпраця</div>
+    <h2 class="rv" data-d="1" style="max-width:14ch">П’ять форматів роботи</h2>
+    <p class="lead rv" data-d="2" style="margin-top:26px;margin-bottom:54px">Усі вони працюють на одній лінії та за одним стандартом якості. Обирайте той, що відповідає вашій задачі.</p>
+
+    <div class="rows">
+      <div class="row rv"><div class="no">01</div><div><h3>Private label для мереж</h3></div>
+        <p>Соус під торговою маркою мережі. Розробляємо смак під ваш ціновий сегмент і полицю, готуємо рецептуру та документацію, друкуємо етикетку, відвантажуємо на розподільчий центр або напряму в магазини.</p></div>
+      <div class="row rv"><div class="no">02</div><div><h3>Фудсервіс і HoReCa</h3></div>
+        <p>Соуси, маринади й концентрати у форматах від 1 до 20 літрів. Головна цінність — стабільність: рецептура не «пливе» від партії до партії, тож смак страви в меню залишається однаковим.</p></div>
+      <div class="row rv"><div class="no">03</div><div><h3>Контрактне виробництво</h3></div>
+        <p>Виробляємо за вашою рецептурою або розробляємо нову під технічне завдання. Беремо на себе закупівлю сировини, варіння, фасування та документальне супроводження партії.</p></div>
+      <div class="row rv"><div class="no">04</div><div><h3>Дистрибуція власних ТМ</h3></div>
+        <p>Bonsai, Bonsai Premium, Bonsai Professional, Peri Peri, Salateria та YKI — сформовані лінійки з підтвердженою оборотністю в національних мережах.</p></div>
+      <div class="row rv"><div class="no">05</div><div><h3>Експортні поставки</h3></div>
+        <p>Готуємо партії під вимоги ринку призначення: маркування, мова етикетки, подовжений залишковий термін придатності, супровідні документи.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= БРЕНДИ ================= -->
+<section class="sec light" id="brands" style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow rv">Портфель</div>
+    <h2 class="rv" data-d="1" style="max-width:16ch">Шість марок — і технологія за кожною</h2>
+
+    <div class="brands">
+      <article class="card rv" data-light><div class="sheen"></div>
+        <h3>Bonsai</h3><div class="cnt">21 позиція</div>
+        <p>Азійська класика: соєві соуси, теріякі, унагі, якіторі, тамарі, солодкий чилі. Пляшка, дой-пак, порційна фасовка.</p></article>
+      <article class="card rv" data-d="1" data-light><div class="sheen"></div>
+        <h3>Bonsai Premium</h3><div class="cnt">9 позицій</div>
+        <p>Верхній ціновий сегмент: бальзамічний соєвий, гранатовий наршараб, горіховий, преміальний класичний.</p></article>
+      <article class="card rv" data-d="2" data-light><div class="sheen"></div>
+        <h3>Bonsai Professional</h3><div class="cnt">21 позиція</div>
+        <p>Лінійка для кухні: соуси й маринади в 1 л, відрах, ПЕТ 5 л і каністрах 20 л, соєві концентрати 1:1.</p></article>
+      <article class="card rv" data-light><div class="sheen"></div>
+        <h3>Peri Peri</h3><div class="cnt">25 позицій</div>
+        <p>Найширша смакова палітра: кухні світу від американської та італійської до грузинської й мексиканської.</p></article>
+      <article class="card rv" data-d="1" data-light><div class="sheen"></div>
+        <h3>Salateria</h3><div class="cnt">8 позицій</div>
+        <p>Салатні заправки: медово-гірчична, цезар, бальзамічна, кунжутна, соєва з кунжутною олією.</p></article>
+      <article class="card rv" data-d="2" data-light><div class="sheen"></div>
+        <h3>YKI</h3><div class="cnt">9 позицій</div>
+        <p>Базова лінійка соєвих соусів і класики в економному сегменті — рішення для промо та цінових полиць.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= СМАКИ ================= -->
+<section class="sec dark" id="taste">
+  <div class="wrap">
+    <div class="eyebrow rv">Смакові платформи</div>
+    <h2 class="rv" data-d="1" style="max-width:16ch">Технології, вже відпрацьовані на лінії</h2>
+    <p class="lead rv" data-d="2" style="margin-top:26px">Це не список побажань, а те, що виходить з виробництва. Кожну платформу можна взяти за основу й переробити під ваш смаковий профіль, гостроту, солодкість і густину.</p>
+
+    <div class="taste">
+      <div class="tc rv"><b>Японська</b><span>Соєвий класичний і тамарі, теріякі, унагі, якіторі, кунжутний, з водоростями комбу</span></div>
+      <div class="tc rv" data-d="1"><b>Китайська</b><span>Кисло-солодкий, гостро-солодкий, устричний</span></div>
+      <div class="tc rv" data-d="2"><b>Тайська</b><span>Солодкий чилі, манго-чилі, жовто-гарячий</span></div>
+      <div class="tc rv" data-d="3"><b>Кантонська</b><span>Соус для локшини WOK</span></div>
+      <div class="tc rv"><b>Корейська</b><span>Кімчі</span></div>
+      <div class="tc rv" data-d="1"><b>Італійська</b><span>Болоньєзе, песто, песто россо, для піци, з в’яленими томатами, пряні трави</span></div>
+      <div class="tc rv" data-d="2"><b>Американська</b><span>BBQ, кетчуп, цезар</span></div>
+      <div class="tc rv" data-d="3"><b>Французька</b><span>Тартар</span></div>
+      <div class="tc rv"><b>Грузинська</b><span>Сацебелі, ткемалі</span></div>
+      <div class="tc rv" data-d="1"><b>Мексиканська</b><span>Ожиновий з перцем халапеньйо</span></div>
+      <div class="tc rv" data-d="2"><b>Салатні заправки</b><span>Медово-гірчична, цезар, бальзаміко, кунжутна</span></div>
+      <div class="tc rv" data-d="3"><b>Маринади</b><span>Соєвий з копченою цибулею, теріякі з медом і кунжутом, вишневий з паприкою</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ПАКУВАННЯ (SVG-малювання) ================= -->
+<section class="sec light" id="packaging">
+  <div class="wrap">
+    <div class="eyebrow rv">Пакування</div>
+    <h2 class="rv" data-d="1" style="max-width:17ch">Той самий соус — у форматі вашого каналу</h2>
+    <p class="lead rv" data-d="2" style="margin-top:26px">Формат тари визначає і собівартість, і зручність для кінцевого користувача. Фасуємо в п’ять базових типів і опрацьовуємо нестандартні рішення під обсяг.</p>
+
+    <div class="packs" id="packs">
+      <div class="pk">
+        <svg viewBox="0 0 100 170" stroke="#DD9C46" stroke-width="1.8">
+          <path data-draw d="M27 122 L35 154 L65 154 L73 122 Z"/>
+          <path data-draw stroke-width="2.6" d="M23 122 L77 122"/>
+          <path data-draw stroke-width="1.1" stroke-opacity=".45" d="M27 128 L73 128"/>
+        </svg>
+        <b>Порційний стаканчик</b><span>40 мл · доставка, сети, фуд-корт</span>
+      </div>
+      <div class="pk">
+        <svg viewBox="0 0 100 170" stroke="#DD9C46" stroke-width="1.8">
+          <path data-draw d="M24 76 L76 76 L76 146 C60 154 40 154 24 146 Z"/>
+          <path data-draw stroke-width="1.1" stroke-opacity=".45" d="M24 82 L76 82"/>
+          <path data-draw stroke-width="1.1" stroke-opacity=".45" d="M24 136 C40 144 60 144 76 136"/>
+          <path data-draw d="M62 62 L74 62 L74 76 L62 76 Z"/>
+          <path data-draw stroke-width="1.1" stroke-opacity=".5" d="M62 66 L74 66 M62 70 L74 70"/>
+        </svg>
+        <b>Дой-пак</b><span>200–500 г · полиця та кухня</span>
+      </div>
+      <div class="pk">
+        <svg viewBox="0 0 100 170" stroke="#DD9C46" stroke-width="1.8">
+          <path data-draw d="M37 30 L63 30 L63 42 L37 42 Z"/>
+          <path data-draw d="M39 42 L39 52 C39 59 30 63 30 74 L30 148 C30 152 33 155 37 155 L63 155 C67 155 70 152 70 148 L70 74 C70 63 61 59 61 52 L61 42"/>
+          <path data-draw stroke-width="1.1" stroke-opacity=".45" d="M30 96 L70 96 M30 126 L70 126"/>
+        </svg>
+        <b>ПЕТ-пляшка</b><span>180–1300 мл · роздріб і HoReCa</span>
+      </div>
+      <div class="pk">
+        <svg viewBox="0 0 100 170" stroke="#DD9C46" stroke-width="1.8">
+          <path data-draw stroke-opacity=".6" d="M25 80 C29 54 71 54 75 80"/>
+          <path data-draw d="M20 80 L80 80 L80 88 L20 88 Z"/>
+          <path data-draw d="M24 88 L29 150 C29 153 31 155 34 155 L66 155 C69 155 71 153 71 150 L76 88"/>
+        </svg>
+        <b>Відро</b><span>1–5 кг · кухня закладу</span>
+      </div>
+      <div class="pk">
+        <svg viewBox="0 0 100 170" stroke="#DD9C46" stroke-width="1.8">
+          <path data-draw d="M24 46 L76 46 L76 150 C76 153 74 155 71 155 L29 155 C26 155 24 153 24 150 Z"/>
+          <path data-draw d="M58 34 L72 34 L72 46 L58 46 Z"/>
+          <path data-draw stroke-opacity=".6" d="M28 46 C28 30 48 30 48 46"/>
+          <path data-draw stroke-width="1.1" stroke-opacity=".45" d="M30 92 L70 92 M30 102 L70 102"/>
+        </svg>
+        <b>Каністра</b><span>5–20 л · великі кухні, переробка</span>
+      </div>
+    </div>
+
+    <div style="margin-top:clamp(60px,8vw,100px)">
+      <h3 class="rv" style="margin-bottom:10px">Матеріали</h3>
+      <p class="rv" data-d="1" style="color:var(--mute-l);font-size:15px;max-width:52ch">Скло, матовий метал, глянцева плівка, крафт — кожна поверхня по-різному ловить світло. Проведіть курсором.</p>
+      <div class="mats rv" data-d="2">
+        <div class="mat glass" data-light><div class="surf"></div><div class="spec"></div><b>Скло</b></div>
+        <div class="mat metal" data-light><div class="surf"></div><div class="spec"></div><b>Матовий метал</b></div>
+        <div class="mat gloss" data-light><div class="surf"></div><div class="spec"></div><b>Глянцева плівка</b></div>
+        <div class="mat kraft" data-light><div class="surf"></div><div class="spec"></div><b>Крафт</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= РОЗРОБКА (SVG-малювання) ================= -->
+<section class="sec dark" id="process">
+  <div class="wrap">
+    <div class="eyebrow rv">Розробка рецептури</div>
+    <h2 class="rv" data-d="1" style="max-width:15ch">Від брифа до серії — шість кроків</h2>
+    <p class="lead rv" data-d="2" style="margin-top:26px">Власний відділ R&amp;D веде проєкт від першої дегустації до промислової партії. Ви працюєте з технологом напряму, без посередників між ідеєю та лінією.</p>
+
+    <div class="flowwrap">
+      <svg viewBox="0 0 1200 120" id="flow" aria-hidden="true">
+        <path d="M40 60 C 152 60 152 34 264 34 C 376 34 376 86 488 86 C 600 86 600 34 712 34 C 824 34 824 86 936 86 C 1048 86 1048 60 1160 60"
+              stroke="rgba(243,240,231,.16)" stroke-width="1.6" fill="none"/>
+        <path id="flowLine" d="M40 60 C 152 60 152 34 264 34 C 376 34 376 86 488 86 C 600 86 600 34 712 34 C 824 34 824 86 936 86 C 1048 86 1048 60 1160 60"
+              stroke="#DD9C46" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <g id="flowDots" fill="#15200E" stroke="#DD9C46" stroke-width="2">
+          <circle cx="40" cy="60" r="6"/><circle cx="264" cy="34" r="6"/><circle cx="488" cy="86" r="6"/>
+          <circle cx="712" cy="34" r="6"/><circle cx="936" cy="86" r="6"/><circle cx="1160" cy="60" r="6"/>
+        </g>
+      </svg>
+
+      <div class="steps" id="steps">
+        <div class="st"><em>Крок 1</em><b>Бриф</b><span>Смаковий профіль, сфера застосування, формат фасування, цільова ціна й обсяг.</span></div>
+        <div class="st"><em>Крок 2</em><b>Зразок</b><span>Технологи готують кілька варіантів рецептури й передають на дегустацію.</span></div>
+        <div class="st"><em>Крок 3</em><b>Коригування</b><span>Правимо смак, гостроту, солодкість, колір і густину за вашими зауваженнями.</span></div>
+        <div class="st"><em>Крок 4</em><b>Документація</b><span>Рецептура, харчова цінність, макет маркування, термін придатності.</span></div>
+        <div class="st"><em>Крок 5</em><b>Пробна партія</b><span>Валідація на промисловій лінії та фіксація еталонного зразка.</span></div>
+        <div class="st"><em>Крок 6</em><b>Серія</b><span>Виробництво за графіком: кожна партія звіряється з еталоном.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ЯКІСТЬ ================= -->
+<section class="sec light" id="quality">
+  <div class="wrap qual">
+    <div>
+      <div class="eyebrow rv">Якість і безпечність</div>
+      <h2 class="rv" data-d="1" style="max-width:13ch">Якість, яку можна перевірити документом</h2>
+      <p class="lead rv" data-d="2" style="margin-top:26px">Система управління безпечністю харчових продуктів сертифікована за FSSC 22000. Контроль ведемо не наприкінці, а на кожному етапі — від приймання сировини до відвантаження партії.</p>
+      <div class="rv" data-d="3" style="margin-top:36px;display:inline-flex;align-items:center;gap:16px;
+                  border:1px solid var(--line-l);padding:16px 24px">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#63864A" stroke-width="1.8">
+          <path data-draw d="M12 2.6 4.4 6v6.1c0 4.6 3.2 8.4 7.6 9.3 4.4-.9 7.6-4.7 7.6-9.3V6z"/>
+          <path data-draw d="M8.4 12.1 11 14.7l4.6-5.2"/>
+        </svg>
+        <div><b style="display:block;font-size:15px">FSSC 22000</b>
+          <span style="font-size:13px;color:var(--mute-l)">Сертифікована система менеджменту безпечності</span></div>
+      </div>
+    </div>
+    <div class="qlist rv" data-d="2">
+      <div class="qi"><b>Власна служба якості</b><span>Вхідний контроль сировини й пакувальних матеріалів, контроль параметрів на лінії, перевірка готової партії перед відвантаженням.</span></div>
+      <div class="qi"><b>Лабораторний контроль</b><span>Масова частка сухих речовин, pH, титрована кислотність, в’язкість та органолептична оцінка — за кожною партією.</span></div>
+      <div class="qi"><b>Простежуваність</b><span>Номер партії й дата на кожній одиниці продукції: від конкретної партії сировини до вашого замовлення.</span></div>
+      <div class="qi"><b>Стабільність смаку</b><span>Еталонний зразок узгоджується з вами на старті й залишається точкою звіряння для всіх наступних партій.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ЛОГІСТИКА (SVG-маршрут) ================= -->
+<section class="sec dark" id="logistics">
+  <div class="wrap">
+    <div class="eyebrow rv">Логістика</div>
+    <h2 class="rv" data-d="1" style="max-width:16ch">Від нашої лінії до вашої полиці</h2>
+    <p class="lead rv" data-d="2" style="margin-top:26px">Ми не залежимо від сторонніх перевізників у плануванні відвантажень, тому графік узгоджується під ваші вимоги, а не під чужий розклад.</p>
+
+    <div class="route">
+      <svg viewBox="0 0 1200 300" id="routeSvg">
+        <path d="M70 230 C 250 230 250 90 430 90 C 610 90 610 230 790 230 C 970 230 970 120 1130 120"
+              stroke="rgba(243,240,231,.14)" stroke-width="1.6" fill="none" stroke-dasharray="4 7"/>
+        <path id="routeLine" d="M70 230 C 250 230 250 90 430 90 C 610 90 610 230 790 230 C 970 230 970 120 1130 120"
+              stroke="#97C35A" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <circle id="routeDot" r="7" fill="#DD9C46"/>
+        <g>
+          <circle cx="70" cy="230" r="5" fill="#15200E" stroke="#97C35A" stroke-width="2"/>
+          <text class="pin-lbl" x="70" y="268">Виробництво</text>
+          <text class="pin-sub" x="70" y="286">Київ, власна лінія</text>
+        </g>
+        <g>
+          <circle cx="430" cy="90" r="5" fill="#15200E" stroke="#97C35A" stroke-width="2"/>
+          <text class="pin-lbl" x="430" y="62">Розподільчий центр</text>
+          <text class="pin-sub" x="430" y="44">Палети під вимоги приймання</text>
+        </g>
+        <g>
+          <circle cx="790" cy="230" r="5" fill="#15200E" stroke="#97C35A" stroke-width="2"/>
+          <text class="pin-lbl" x="790" y="268">Прямі поставки</text>
+          <text class="pin-sub" x="790" y="286">Напряму в торгові точки</text>
+        </g>
+        <g>
+          <circle cx="1130" cy="120" r="5" fill="#15200E" stroke="#DD9C46" stroke-width="2"/>
+          <text class="pin-lbl" x="1050" y="92">Полиця або кухня</text>
+          <text class="pin-sub" x="1050" y="74">Та експортні партії</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="taste" style="margin-top:44px">
+      <div class="tc rv"><b>Власний транспорт</b><span>Формуємо й відвантажуємо партії власними силами, включно зі змішаними палетами.</span></div>
+      <div class="tc rv" data-d="1"><b>Документи на партію</b><span>Повний пакет під вимоги мережі, закладу або митного оформлення.</span></div>
+      <div class="tc rv" data-d="2"><b>Планування</b><span>Графік відвантажень погоджуємо наперед, щоб виробництво встигало під ваш обсяг.</span></div>
+      <div class="tc rv" data-d="3"><b>Експорт</b><span>Подовжений залишковий термін придатності та маркування під ринок призначення.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ФІНАЛ ================= -->
+<section id="cta" class="darker">
+  <div class="bg" data-para data-speed="0.2" aria-hidden="true"></div>
+  <div class="wrap inner">
+    <h2 class="rv">Надішліть бриф — повернемося з рецептурним рішенням</h2>
+    <p class="lead rv" data-d="1">Достатньо короткого опису задачі. Далі працюють технолог і менеджер напряму: ви отримаєте зразок і комерційну пропозицію, а не загальну презентацію у відповідь.</p>
+    <div class="acts rv" data-d="2">
+      <a class="btn big" data-mag href="https://yuriybuz.github.io/brief/" target="_blank" rel="noopener"><span>Заповнити бриф онлайн</span></a>
+      <a class="btn ghost big" data-mag href="tel:+380504467973"><span>+380 50 446 79 73</span></a>
+    </div>
+    <div class="contacts rv" data-d="3">
+      <div><b>Виробництво</b>ПП «Фудлайн Продакшн», Київ</div>
+      <div><b>Пошта</b><a href="mailto:y_buznitskiy@vsesvit-group.com.ua">y_buznitskiy@vsesvit-group.com.ua</a></div>
+      <div><b>Сайт</b><a href="https://foodline-production.com" target="_blank" rel="noopener">foodline-production.com</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div>© <span id="yr">2026</span> ПП «Фудлайн Продакшн»</div>
+  <div>FSSC 22000 · Київ, Україна</div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script>
+/* ============================================================
+   FOOD LINE PRODUCTION — рушій взаємодій
+   Один rAF-цикл на всю сторінку. Без залежностей, окрім Lenis
+   (плавна прокрутка), яка є необовʼязковою.
+   ============================================================ */
+(function () {
+  'use strict';
+
+  var clamp = function (v, a, b) { return v < a ? a : v > b ? b : v; };
+  var lerp  = function (a, b, t) { return a + (b - a) * t; };
+  var norm  = function (v, a, b) { return clamp((v - a) / (b - a), 0, 1); };
+  var ease  = function (t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+  var $  = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+
+  var REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // спільний стан, який читає 3D-сцена
+  var SITE = window.SITE = {
+    explode: 0,      // 0..1 — прогрес розбирання пляшки
+    inView: false,   // чи видно 3D-секцію
+    tilt: { x: 0, y: 0 },   // нахил від курсора або гіроскопа, -1..1
+    light: { x: 0, y: 0 },  // положення джерела світла, -1..1
+    reduced: REDUCED,
+    vh: window.innerHeight,
+    ready: false
+  };
+
+  /* ---------------- прелоадер ---------------- */
+  var pre = $('#pre'), preBar = $('#preBar'), fake = 0;
+  var tickPre = setInterval(function () {
+    fake = Math.min(fake + Math.random() * 18, 92);
+    if (preBar) preBar.style.width = fake + '%';
+  }, 170);
+
+  function launch() {
+    clearInterval(tickPre);
+    if (preBar) preBar.style.width = '100%';
+    setTimeout(function () {
+      if (pre) pre.classList.add('gone');
+      document.body.classList.add('ready');
+      SITE.ready = true;
+    }, 260);
+  }
+  if (document.readyState === 'complete') setTimeout(launch, 260);
+  else window.addEventListener('load', function () { setTimeout(launch, 260); });
+  setTimeout(launch, 4200);   // страховка: сторінка ніколи не залишиться під шторкою
+
+  /* ---------------- плавна прокрутка ---------------- */
+  var lenis = null;
+  if (window.Lenis && !REDUCED) {
+    try {
+      lenis = new window.Lenis({
+        duration: 1.15,
+        easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
+        smoothWheel: true, touchMultiplier: 1.8
+      });
+    } catch (e) { lenis = null; }
+  }
+
+  $$('a[href^="#"]').forEach(function (a) {
+    a.addEventListener('click', function (ev) {
+      var id = a.getAttribute('href');
+      if (id.length < 2) return;
+      var t = $(id);
+      if (!t) return;
+      ev.preventDefault();
+      if (lenis) lenis.scrollTo(t, { offset: 0 });
+      else t.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth' });
+    });
+  });
+
+  /* ---------------- розбивка заголовка на слова ---------------- */
+  $$('[data-split]').forEach(function (el) {
+    var words = el.textContent.trim().split(/\s+/);
+    el.innerHTML = words.map(function (w, i) {
+      return '<span class="word"><i style="transition-delay:' + (0.06 * i + 0.15).toFixed(2) + 's">' + w + '</i></span>';
+    }).join(' ');
+  });
+
+  /* ---------------- поява блоків ---------------- */
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: .12, rootMargin: '0px 0px -8% 0px' });
+    $$('.rv').forEach(function (el) { io.observe(el); });
+  } else {
+    $$('.rv').forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* ---------------- лічильники ---------------- */
+  $$('[data-count]').forEach(function (el) {
+    var target = parseFloat(el.getAttribute('data-count')), done = false;
+    function run() {
+      if (done) return; done = true;
+      var t0 = performance.now(), dur = 1400;
+      (function step(now) {
+        var p = ease(clamp((now - t0) / dur, 0, 1));
+        el.textContent = Math.round(target * p);
+        if (p < 1) requestAnimationFrame(step);
+      })(t0);
+    }
+    if ('IntersectionObserver' in window) {
+      var o = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { run(); o.disconnect(); } });
+      }, { threshold: .5 });
+      o.observe(el);
+    } else run();
+  });
+
+  /* ---------------- курсор: світло, магніт, відблиски ---------------- */
+  var pointer = { x: .5, y: .4, rx: .5, ry: .4, active: false };
+
+  function setPointer(px, py) {
+    pointer.x = px / window.innerWidth;
+    pointer.y = py / window.innerHeight;
+    if (!pointer.active) { pointer.active = true; document.body.classList.add('glowon'); }
+  }
+
+  window.addEventListener('pointermove', function (e) {
+    setPointer(e.clientX, e.clientY);
+
+    // локальні відблиски на матеріалах і картках
+    var host = e.target.closest ? e.target.closest('[data-light]') : null;
+    if (host) {
+      var r = host.getBoundingClientRect();
+      host.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      host.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    }
+  }, { passive: true });
+
+  // гіроскоп — той самий ефект світла й нахилу на смартфоні
+  function gyro(e) {
+    if (e.gamma == null || e.beta == null) return;
+    var gx = clamp(e.gamma / 35, -1, 1);          // ліво-право
+    var gy = clamp((e.beta - 45) / 40, -1, 1);    // нахил уперед
+    pointer.x = .5 + gx * .5;
+    pointer.y = .5 + gy * .5;
+    if (!pointer.active) { pointer.active = true; document.body.classList.add('glowon'); }
+    $$('[data-light]').forEach(function (host) {
+      var r = host.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > window.innerHeight) return;
+      host.style.setProperty('--mx', (r.width * (.5 + gx * .45)) + 'px');
+      host.style.setProperty('--my', (r.height * (.5 + gy * .45)) + 'px');
+    });
+  }
+  if (window.DeviceOrientationEvent) {
+    var needPerm = typeof window.DeviceOrientationEvent.requestPermission === 'function';
+    if (!needPerm) window.addEventListener('deviceorientation', gyro, { passive: true });
+    else {
+      window.addEventListener('touchstart', function once() {
+        window.removeEventListener('touchstart', once);
+        window.DeviceOrientationEvent.requestPermission().then(function (s) {
+          if (s === 'granted') window.addEventListener('deviceorientation', gyro, { passive: true });
+        }).catch(function () {});
+      }, { passive: true, once: true });
+    }
+  }
+
+  var glow = $('.glow');
+
+  /* ---------------- магнітні кнопки ---------------- */
+  $$('[data-mag]').forEach(function (el) {
+    var inner = el.querySelector('span') || el;
+    var raf = null, cur = { x: 0, y: 0 }, aim = { x: 0, y: 0 }, on = false;
+
+    function loop() {
+      cur.x = lerp(cur.x, aim.x, .18);
+      cur.y = lerp(cur.y, aim.y, .18);
+      el.style.transform = 'translate3d(' + cur.x.toFixed(2) + 'px,' + cur.y.toFixed(2) + 'px,0)';
+      inner.style.transform = 'translate3d(' + (cur.x * .32).toFixed(2) + 'px,' + (cur.y * .32).toFixed(2) + 'px,0)';
+      if (Math.abs(cur.x - aim.x) > .05 || Math.abs(cur.y - aim.y) > .05 || on) raf = requestAnimationFrame(loop);
+      else { raf = null; el.style.transform = ''; inner.style.transform = ''; }
+    }
+    function kick() { if (!raf) raf = requestAnimationFrame(loop); }
+
+    el.addEventListener('pointermove', function (e) {
+      if (REDUCED) return;
+      var r = el.getBoundingClientRect();
+      var dx = e.clientX - (r.left + r.width / 2);
+      var dy = e.clientY - (r.top + r.height / 2);
+      var reach = Math.max(r.width, r.height) * .55;
+      aim.x = clamp(dx * .34, -reach, reach);
+      aim.y = clamp(dy * .48, -reach, reach);
+      on = true; kick();
+    });
+    el.addEventListener('pointerleave', function () {
+      aim.x = 0; aim.y = 0; on = false; kick();
+    });
+  });
+
+  /* ---------------- біжучий рядок ---------------- */
+  var tick = $('#tick');
+  if (tick) {
+    tick.innerHTML += tick.innerHTML + tick.innerHTML;
+  }
+
+  /* ---------------- малювання SVG-шляхів ---------------- */
+  var drawn = [];
+  $$('svg').forEach(function (svg) {
+    var paths = $$('[data-draw]', svg);
+    if (!paths.length) return;
+    var items = paths.map(function (p, i) {
+      var L = 0;
+      try { L = p.getTotalLength(); } catch (e) { L = 0; }
+      if (!L) return null;
+      p.style.strokeDasharray = L;
+      p.style.strokeDashoffset = L;
+      return { el: p, len: L, from: i * .1, to: Math.min(1, i * .1 + .58) };
+    }).filter(Boolean);
+    if (items.length) drawn.push({ host: svg, items: items });
+  });
+
+  function paintDrawn() {
+    var vh = window.innerHeight;
+    for (var i = 0; i < drawn.length; i++) {
+      var g = drawn[i], r = g.host.getBoundingClientRect();
+      if (r.bottom < -200 || r.top > vh + 200) continue;
+      var p = norm(vh * .88 - r.top, 0, Math.max(vh * .5, r.height * .8));
+      for (var j = 0; j < g.items.length; j++) {
+        var it = g.items[j];
+        var lp = ease(norm(p, it.from, it.to));
+        it.el.style.strokeDashoffset = (it.len * (1 - lp)).toFixed(1);
+      }
+    }
+  }
+
+  /* ---------------- лінія процесу + підсвітка кроків ---------------- */
+  var flowLine = $('#flowLine'), flowLen = 0, flowDots = $$('#flowDots circle'), stepEls = $$('#steps .st');
+  if (flowLine) {
+    try { flowLen = flowLine.getTotalLength(); } catch (e) { flowLen = 0; }
+    if (flowLen) { flowLine.style.strokeDasharray = flowLen; flowLine.style.strokeDashoffset = flowLen; }
+  }
+  var flowWrap = $('.flowwrap');
+
+  function paintFlow() {
+    if (!flowWrap || !flowLen) return;
+    var r = flowWrap.getBoundingClientRect(), vh = window.innerHeight;
+    if (r.bottom < -100 || r.top > vh + 100) return;
+    var p = ease(norm(vh * .82 - r.top, 0, vh * .55));
+    flowLine.style.strokeDashoffset = (flowLen * (1 - p)).toFixed(1);
+    for (var i = 0; i < stepEls.length; i++) {
+      var lit = p >= (i / stepEls.length) * .92 + .04;
+      stepEls[i].classList.toggle('on', lit);
+      if (flowDots[i]) flowDots[i].setAttribute('fill', lit ? '#DD9C46' : '#15200E');
+    }
+  }
+
+  /* ---------------- маршрут логістики ---------------- */
+  var routeLine = $('#routeLine'), routeDot = $('#routeDot'), routeLen = 0, routeSvg = $('#routeSvg');
+  if (routeLine) {
+    try { routeLen = routeLine.getTotalLength(); } catch (e) { routeLen = 0; }
+    if (routeLen) { routeLine.style.strokeDasharray = routeLen; routeLine.style.strokeDashoffset = routeLen; }
+  }
+
+  function paintRoute() {
+    if (!routeSvg || !routeLen) return;
+    var r = routeSvg.getBoundingClientRect(), vh = window.innerHeight;
+    if (r.bottom < -100 || r.top > vh + 100) return;
+    var p = ease(norm(vh * .82 - r.top, 0, vh * .6));
+    routeLine.style.strokeDashoffset = (routeLen * (1 - p)).toFixed(1);
+    if (routeDot) {
+      var pt = routeLine.getPointAtLength(routeLen * p);
+      routeDot.setAttribute('cx', pt.x);
+      routeDot.setAttribute('cy', pt.y);
+      routeDot.setAttribute('opacity', p > .01 && p < .995 ? 1 : 0);
+    }
+  }
+
+  /* ---------------- паралакс ---------------- */
+  var paras = $$('[data-para]').map(function (el) {
+    return { el: el, sp: parseFloat(el.getAttribute('data-speed')) || .15 };
+  });
+
+  function paintPara() {
+    if (REDUCED) return;
+    var vh = window.innerHeight;
+    for (var i = 0; i < paras.length; i++) {
+      var o = paras[i], r = o.el.getBoundingClientRect();
+      if (r.bottom < -300 || r.top > vh + 300) continue;
+      var mid = r.top + r.height / 2 - vh / 2;
+      o.el.style.transform = 'translate3d(0,' + (-mid * o.sp).toFixed(1) + 'px,0)';
+    }
+  }
+
+  /* ---------------- 3D-секція: прогрес ---------------- */
+  var exp = $('#explode'), glProg = $('#glProg'), stage = $('#stage');
+  var stepDivs = stage ? $$('.step', stage) : [];
+  var TH = [0, .30, .54, .76];
+  var lastStep = -1;
+
+  function paintExplode() {
+    if (!exp) return;
+    var r = exp.getBoundingClientRect(), vh = window.innerHeight;
+    var total = r.height - vh;
+    var p = total > 0 ? clamp(-r.top / total, 0, 1) : 0;
+    SITE.explode = p;
+    SITE.inView = r.top < vh && r.bottom > 0;
+    if (glProg) glProg.style.height = (p * 100) + '%';
+
+    var idx = 0;
+    for (var i = TH.length - 1; i >= 0; i--) { if (p >= TH[i]) { idx = i; break; } }
+    if (idx !== lastStep) {
+      lastStep = idx;
+      for (var j = 0; j < stepDivs.length; j++) stepDivs[j].classList.toggle('on', j === idx);
+    }
+  }
+
+  /* ---------------- шапка й смуга прогресу ---------------- */
+  var hdr = $('#hdr'), bar = $('#bar');
+  function paintChrome(y) {
+    if (hdr) hdr.classList.toggle('stuck', y > 60);
+    if (bar) {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+    }
+  }
+
+  /* ---------------- головний цикл ---------------- */
+  function frame(time) {
+    if (lenis) lenis.raf(time);
+
+    var y = window.scrollY || window.pageYOffset;
+
+    pointer.rx = lerp(pointer.rx, pointer.x, .09);
+    pointer.ry = lerp(pointer.ry, pointer.y, .09);
+
+    if (glow && pointer.active && !REDUCED) {
+      glow.style.transform = 'translate3d(' +
+        (pointer.rx * window.innerWidth).toFixed(1) + 'px,' +
+        (pointer.ry * window.innerHeight).toFixed(1) + 'px,0)';
+    }
+
+    SITE.tilt.x  = (pointer.rx - .5) * 2;
+    SITE.tilt.y  = (pointer.ry - .5) * 2;
+    SITE.light.x = (pointer.x - .5) * 2;
+    SITE.light.y = (pointer.y - .5) * 2;
+
+    paintChrome(y);
+    paintPara();
+    paintExplode();
+    paintDrawn();
+    paintFlow();
+    paintRoute();
+
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+
+  window.addEventListener('resize', function () {
+    SITE.vh = window.innerHeight;
+  }, { passive: true });
+
+  var yr = $('#yr');
+  if (yr) yr.textContent = new Date().getFullYear();
+})();
+
+</script>
+<script type="module">
+/* ============================================================
+   FOOD LINE PRODUCTION — 3D-розбирання пляшки
+   Прогрес прокрутки (SITE.explode 0..1) керує єдиною таймлінією:
+   кришка → етикетка → скло → складники.
+   ============================================================ */
+import * as THREE from 'three';
+
+const canvas = document.getElementById('gl');
+const pin = canvas ? canvas.parentElement : null;
+const fallback = document.getElementById('no3d');
+const S = window.SITE || { explode: 0, inView: true, tilt: { x: 0, y: 0 }, light: { x: 0, y: 0 }, reduced: false };
+
+function giveUp() {
+  if (canvas) canvas.style.display = 'none';
+  if (fallback) fallback.classList.add('on');
+  const st = document.getElementById('stage');
+  if (st) st.style.display = 'none';
+  const pr = document.querySelector('#explode .prog');
+  if (pr) pr.style.display = 'none';
+  const ex = document.getElementById('explode');
+  if (ex) ex.style.height = '110vh';   // без 3D довга прокрутка ні до чого
+}
+
+const clamp = (v, a, b) => (v < a ? a : v > b ? b : v);
+const norm = (v, a, b) => clamp((v - a) / (b - a), 0, 1);
+const easeOut = t => 1 - Math.pow(1 - t, 3);
+const easeIO = t => (t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
+const lerp = (a, b, t) => a + (b - a) * t;
+
+let renderer;
+try {
+  renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
+} catch (e) {
+  giveUp();
+  throw e;
+}
+if (!renderer || !renderer.getContext()) { giveUp(); throw new Error('WebGL недоступний'); }
+
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.12;
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(34, 1, .1, 100);
+camera.position.set(0, .35, 8.6);
+camera.lookAt(0, .2, 0);
+
+/* ---------- оточення для відблисків на склі ---------- */
+function envTexture() {
+  const c = document.createElement('canvas');
+  c.width = 512; c.height = 256;
+  const x = c.getContext('2d');
+  const g = x.createLinearGradient(0, 0, 0, 256);
+  g.addColorStop(0, '#243019');
+  g.addColorStop(.42, '#4C6438');
+  g.addColorStop(.58, '#0E1408');
+  g.addColorStop(1, '#050703');
+  x.fillStyle = g; x.fillRect(0, 0, 512, 256);
+  // світлова панель — вона й дає довгий відблиск на пляшці
+  const p = x.createLinearGradient(90, 0, 250, 0);
+  p.addColorStop(0, 'rgba(255,255,255,0)');
+  p.addColorStop(.5, 'rgba(255,252,240,.95)');
+  p.addColorStop(1, 'rgba(255,255,255,0)');
+  x.fillStyle = p; x.fillRect(90, 18, 160, 120);
+  // теплий бік
+  const w = x.createRadialGradient(400, 90, 8, 400, 90, 130);
+  w.addColorStop(0, 'rgba(237,184,106,.85)');
+  w.addColorStop(1, 'rgba(237,184,106,0)');
+  x.fillStyle = w; x.fillRect(270, 0, 242, 220);
+  const t = new THREE.CanvasTexture(c);
+  t.mapping = THREE.EquirectangularReflectionMapping;
+  t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
+try {
+  const pmrem = new THREE.PMREMGenerator(renderer);
+  scene.environment = pmrem.fromEquirectangular(envTexture()).texture;
+  pmrem.dispose();
+} catch (e) { /* без оточення теж працює */ }
+
+/* ---------- світло ---------- */
+scene.add(new THREE.AmbientLight(0xE8F0DC, .55));
+const key = new THREE.DirectionalLight(0xFFF6E4, 2.1);
+key.position.set(-3.4, 5.2, 4.4); scene.add(key);
+const rim = new THREE.DirectionalLight(0x97C35A, 1.5);
+rim.position.set(3.6, 1.4, -3.8); scene.add(rim);
+const fill = new THREE.DirectionalLight(0xDD9C46, .8);
+fill.position.set(2.6, -2.2, 2.4); scene.add(fill);
+// це джерело їздить за курсором — «живий» відблиск на матеріалі
+const cursorLight = new THREE.PointLight(0xFFFFFF, 26, 22, 2);
+cursorLight.position.set(2, 2, 4); scene.add(cursorLight);
+
+/* ---------- геометрія пляшки ---------- */
+const rig = new THREE.Group();
+rig.position.y = -1.35;
+scene.add(rig);
+
+const profile = [[.001, 0], [.42, 0], [.46, .08], [.46, 1.5], [.455, 1.76], [.40, 2.0],
+                 [.30, 2.2], [.205, 2.38], [.176, 2.52], [.176, 2.8], [.198, 2.87], [.186, 2.93]];
+const curve = new THREE.CatmullRomCurve3(profile.map(p => new THREE.Vector3(p[0], p[1], 0)));
+const pts = curve.getPoints(90).map(v => new THREE.Vector2(Math.max(v.x, .0006), v.y));
+
+const glassMat = new THREE.MeshPhysicalMaterial({
+  color: 0xBFD3AE, roughness: .05, metalness: 0, transparent: true, opacity: .30,
+  clearcoat: 1, clearcoatRoughness: .02, side: THREE.DoubleSide,
+  envMapIntensity: 2.1, depthWrite: false
+});
+const glass = new THREE.Mesh(new THREE.LatheGeometry(pts, 96), glassMat);
+rig.add(glass);
+
+// рідина всередині
+const FILL = 1.92;
+const liqPts = pts.filter(p => p.y <= FILL).map(p => new THREE.Vector2(p.x * .93, p.y));
+liqPts.push(new THREE.Vector2(.0006, FILL));
+const liqMat = new THREE.MeshPhysicalMaterial({
+  color: 0x40200D, roughness: .16, metalness: 0, clearcoat: 1, clearcoatRoughness: .1,
+  transparent: true, opacity: .97, envMapIntensity: 1.3
+});
+const liquid = new THREE.Mesh(new THREE.LatheGeometry(liqPts, 72), liqMat);
+rig.add(liquid);
+
+// кришка
+const cap = new THREE.Group();
+const capBody = new THREE.Mesh(
+  new THREE.CylinderGeometry(.207, .207, .30, 56, 1),
+  new THREE.MeshStandardMaterial({ color: 0x1E2A17, roughness: .38, metalness: .22, envMapIntensity: 1.2 })
+);
+const capRing = new THREE.Mesh(
+  new THREE.CylinderGeometry(.212, .212, .055, 56, 1),
+  new THREE.MeshStandardMaterial({ color: 0xDD9C46, roughness: .3, metalness: .35, envMapIntensity: 1.4 })
+);
+capRing.position.y = -.16;
+cap.add(capBody, capRing);
+const CAP_Y = 3.02;
+cap.position.y = CAP_Y;
+rig.add(cap);
+
+/* ---------- етикетка ---------- */
+function labelTexture() {
+  const c = document.createElement('canvas');
+  c.width = 1400; c.height = 460;
+  const x = c.getContext('2d');
+  x.fillStyle = '#F3F0E7'; x.fillRect(0, 0, 1400, 460);
+  x.fillStyle = '#1E2A17'; x.fillRect(0, 0, 1400, 14);
+  x.fillStyle = '#DD9C46'; x.fillRect(0, 446, 1400, 14);
+  const F = (w, s, f) => `${w} ${s}px ${f}, sans-serif`;
+  // кожна етикетка друкується двічі — щоб напис читався з обох боків пляшки
+  for (let k = 0; k < 2; k++) {
+    const ox = k * 700;
+    x.save(); x.translate(ox, 0); x.textAlign = 'center';
+    x.fillStyle = '#63864A'; x.font = F(700, 26, 'Manrope');
+    x.fillText('FOOD LINE PRODUCTION', 350, 118);
+    x.fillStyle = '#1A1A1A'; x.font = F(600, 104, 'Unbounded');
+    x.fillText('BONSAI', 350, 236);
+    x.fillStyle = '#6C6C6E'; x.font = F(500, 30, 'Manrope');
+    x.fillText('Соєвий соус класичний', 350, 300);
+    x.strokeStyle = '#DD9C46'; x.lineWidth = 3;
+    x.beginPath(); x.moveTo(250, 340); x.lineTo(450, 340); x.stroke();
+    x.fillStyle = '#6C6C6E'; x.font = F(600, 25, 'Manrope');
+    x.fillText('500 мл', 350, 392);
+    x.restore();
+  }
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  t.anisotropy = renderer.capabilities.getMaxAnisotropy ? renderer.capabilities.getMaxAnisotropy() : 1;
+  return t;
+}
+const labelMat = new THREE.MeshStandardMaterial({
+  map: labelTexture(), roughness: .62, metalness: .04,
+  side: THREE.DoubleSide, transparent: true, envMapIntensity: .7
+});
+const LAB_Y = .95, LAB_H = 1.05;
+const label = new THREE.Mesh(new THREE.CylinderGeometry(.472, .472, LAB_H, 72, 1, true), labelMat);
+label.position.y = LAB_Y;
+rig.add(label);
+// шрифти можуть доїхати пізніше — тоді перемальовуємо текстуру
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(() => {
+    if (labelMat.map) labelMat.map.dispose();
+    labelMat.map = labelTexture();
+    labelMat.needsUpdate = true;
+  }).catch(() => {});
+}
+
+/* ---------- складники ---------- */
+const INGR = [
+  { name: 'Соєві боби', color: 0x7A5228, note: '' },
+  { name: 'Пшениця',    color: 0xC7A15A, note: '' },
+  { name: 'Сіль',       color: 0xE9E7DF, note: '' },
+  { name: 'Вода',       color: 0x6F9BB0, note: '' }
+];
+const discs = INGR.map((ing, i) => {
+  const m = new THREE.Mesh(
+    new THREE.CylinderGeometry(.415, .415, .115, 64, 1),
+    new THREE.MeshPhysicalMaterial({
+      color: ing.color, roughness: .34, metalness: .05, clearcoat: .8,
+      transparent: true, opacity: 0, envMapIntensity: 1.1
+    })
+  );
+  m.position.y = .5 + i * .12;
+  m.visible = false;
+  rig.add(m);
+  return m;
+});
+
+/* ---------- підписи-виноски ---------- */
+const hotDefs = [
+  { obj: cap,      text: 'Кришка з контролем відкриття', show: [.14, .5] },
+  { obj: label,    text: 'Етикетка під вашу марку',      show: [.36, .68] },
+  { obj: discs[0], text: 'Соєві боби',                   show: [.72, 1.01] },
+  { obj: discs[1], text: 'Пшениця',                      show: [.75, 1.01] },
+  { obj: discs[2], text: 'Сіль',                         show: [.78, 1.01] },
+  { obj: discs[3], text: 'Вода',                         show: [.81, 1.01] }
+];
+const hots = hotDefs.map(d => {
+  const el = document.createElement('div');
+  el.className = 'hot';
+  el.innerHTML = '<span class="dot"></span><span class="cap">' + d.text + '</span>';
+  if (pin) pin.appendChild(el);
+  return { el, def: d };
+});
+
+/* ---------- розмір ---------- */
+let W = 1, H = 1;
+function resize() {
+  if (!canvas) return;
+  W = canvas.clientWidth || window.innerWidth;
+  H = canvas.clientHeight || window.innerHeight;
+  renderer.setSize(W, H, false);
+  camera.aspect = W / H;
+  // на вузьких екранах відсуваємо камеру, щоб пляшка вміщалась
+  camera.fov = W / H < .85 ? 46 : 34;
+  camera.updateProjectionMatrix();
+}
+resize();
+window.addEventListener('resize', resize, { passive: true });
+if ('ResizeObserver' in window && pin) new ResizeObserver(resize).observe(pin);
+
+/* ---------- таймлінія ---------- */
+const v3 = new THREE.Vector3();
+let rotY = 0, tiltX = 0, tiltY = 0;
+
+function apply(p) {
+  // 1. кришка злітає
+  const cp = easeOut(norm(p, .10, .44));
+  cap.position.y = CAP_Y + cp * 1.62;
+  cap.rotation.z = cp * .22;
+  cap.rotation.y = cp * .9;
+
+  // 2. етикетка відходить убік
+  const lp = easeIO(norm(p, .34, .66));
+  label.position.x = lp * 2.35;
+  label.position.y = LAB_Y + lp * .30;
+  label.position.z = lp * .55;
+  label.rotation.y = lp * .85;
+  label.rotation.z = -lp * .16;
+
+  // 3. скло стає примарним
+  const gp = norm(p, .52, .84);
+  glassMat.opacity = lerp(.30, .07, gp);
+
+  // 4. рідина розкладається на складники
+  const dp = easeIO(norm(p, .60, .96));
+  liqMat.opacity = lerp(.97, 0, norm(p, .58, .82));
+  liquid.visible = liqMat.opacity > .01;
+  liquid.scale.y = lerp(1, .82, dp);
+
+  for (let i = 0; i < discs.length; i++) {
+    const m = discs[i];
+    m.material.opacity = dp;
+    m.visible = dp > .01;
+    m.position.y = lerp(.5 + i * .12, .34 + i * .66, dp);
+    m.rotation.y = dp * (.5 + i * .22);
+  }
+
+  // 5. камера трохи відʼїжджає, композиція розсувається
+  camera.position.z = lerp(8.6, 10.9, easeIO(p));
+  camera.position.y = lerp(.35, 1.05, easeIO(p));
+  camera.lookAt(0, lerp(.2, .55, p), 0);
+}
+
+function placeHots(p) {
+  for (let i = 0; i < hots.length; i++) {
+    const h = hots[i], d = h.def;
+    const on = p >= d.show[0] && p <= d.show[1];
+    if (!on) { h.el.style.opacity = 0; continue; }
+    d.obj.getWorldPosition(v3);
+    if (d.obj === label) v3.x += .5;
+    v3.project(camera);
+    if (v3.z > 1) { h.el.style.opacity = 0; continue; }
+    const x = (v3.x * .5 + .5) * W;
+    const y = (-v3.y * .5 + .5) * H;
+    h.el.style.transform = 'translate3d(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px,0)';
+    h.el.style.opacity = 1;
+  }
+}
+
+/* ---------- цикл ---------- */
+let running = true;
+function loop() {
+  requestAnimationFrame(loop);
+  if (!running) return;
+  if (!S.inView) return;                       // не палимо GPU поза секцією
+
+  const p = S.explode || 0;
+
+  // нахил від курсора або гіроскопа
+  const tx = S.reduced ? 0 : (S.tilt.x || 0);
+  const ty = S.reduced ? 0 : (S.tilt.y || 0);
+  tiltX = lerp(tiltX, ty * .22, .06);
+  tiltY = lerp(tiltY, tx * .55, .06);
+  rotY = lerp(rotY, p * 1.15 + tiltY, .08);
+
+  rig.rotation.y = rotY - .35;
+  rig.rotation.x = tiltX;
+  rig.rotation.z = tiltX * .12;
+
+  // світло їде за курсором — відблиск повзе по склу
+  cursorLight.position.set(
+    lerp(cursorLight.position.x, (S.light.x || 0) * 5.2, .07),
+    lerp(cursorLight.position.y, 1.6 - (S.light.y || 0) * 3.4, .07),
+    4.6
+  );
+
+  apply(p);
+  renderer.render(scene, camera);
+  placeHots(p);
+}
+loop();
+
+document.addEventListener('visibilitychange', () => { running = !document.hidden; });
+
+</script>
+</body>
+</html>
